@@ -7,7 +7,7 @@ pipeline{
            }
     stages('maven expression'){
         steps{
-            maven is a build tool
+            echo maven is a build tool
              }
           }
       }
