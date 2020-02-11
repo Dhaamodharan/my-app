@@ -8,7 +8,7 @@ pipeline{
             }
         stage('maven expression'){
             steps{
-                echo mavenisabuildtool
+                echo Mavenisabuildtool
              }
           }
       }
