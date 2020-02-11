@@ -1,11 +1,11 @@
 pipeline{
-    agent=any
-    stages('display name'){
+    agent any
+    stage('display name'){
         steps{ 
             echo Exploredevops
              }
            }
-    stages('maven expression'){
+    stage('maven expression'){
         steps{
             echo maven is a build tool
              }
