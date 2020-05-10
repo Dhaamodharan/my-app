@@ -1,15 +1,18 @@
 pipeline{
     agent any
+    tools{
+       maven 'Maven-3.6'
+       }
     stages{
-        stage('display name'){
-            steps{ 
-                echo Exploredevops
-                }
-            }
-        stage('maven expression'){
+        stage('chekcout'){
             steps{
-                echo Mavenisabuildtool
-             }
-          }
-      }
+                git 'https://github.com/Dhaamodharan/my-app.git'
+                }
+              }
+        stage('build'){
+            steps{
+                sh 'mvn clean package'
+              }
+        }
+    }
 }
