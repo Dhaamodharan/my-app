@@ -6,7 +6,7 @@ package com.mycompany.app;
 public class App
 {
 
-    private final String message = "Hello World!- Welcome to DevOps Session";
+    private final String message = "Hello World!- Welcome to DevOps Session1";
 
     public App() {}
 
