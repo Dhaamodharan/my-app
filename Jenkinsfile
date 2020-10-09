@@ -16,7 +16,7 @@ pipeline{
         }
         stage('deploy'){
             steps{
-                echo 'deployment success'
+                echo 'deployment of maven is success'
               }
         }
     }
