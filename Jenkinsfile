@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    tools{
-       maven 'Maven-3.6'
-       }
+    
     stages{
         stage('chekcout'){
             steps{
@@ -10,6 +8,9 @@ pipeline{
                 }
               }
         stage('build'){
+            tools{
+                maven 'Maven-3.6'
+                   }
             steps{
                 sh 'mvn clean package'
               }
