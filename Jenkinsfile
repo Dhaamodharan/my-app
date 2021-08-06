@@ -17,7 +17,7 @@ pipeline{
         }
         stage('deploy'){
             steps{
-                echo 'deployment of maven is success-through webhook'
+                echo 'deployment of maven is success-through webhook-option'
               }
         }
     }
